@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Roboto Condensed;
+  font-size: large;
+  font-weight: 700;
+  color: black;
+}
+
+:root {
+  --titleBlue : #0069D8
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+header { 
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  width: 100%;
+  padding: 0 20px;
+}
+.nav-left,.nav-right{
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+span:hover,a:hover{
+  color:var(--titleBlue)
+}
+
+section {
+  height : 100vh;
+  border: 1px solid;
+}
+
+.transport,.particulier,.mon-compte {
+  position: relative;
+}
+
+.transporteur,.particulier,.annonce,.mon-compte {
+  cursor: pointer;
+}
+
+.burger {
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
+button{
+  background-color: var(--titleBlue);
+  padding: 10px;
+  color: aliceblue;
+  border: none;
+  
+}
+button:hover{
+background-color: aliceblue;
+color: var(--titleBlue);
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.submenu{
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color:whitesmoke;
+  border-radius: 10px;
+  width: 160px;
+  height: 150px;
+  margin: 10px;
+  z-index: 1;
+  
+ }
+
+ .submenu.active{
+  display: flex;
+  position: absolute;
+  top: 50px;
+  left: -40px;
+  
+ }
